@@ -29,9 +29,16 @@ def printlist2():
 
     
 def printtotal2():
-    for i in range(0,len(set(total))):
-        print(total[i],"\tharga: ",hargaTotal[i], "\t jumlah barang: ", total.count(total[i]),
-        "\t jumlah harga: ",hargaTotal[i]*total.count(total[i]))
+    a= list(set(total))
+    b=[]
+    for i in range(0, len(a)):
+        check=a[i]
+        for c in range(0,len(item.x)):
+            if check==item.x[c]:
+                b.append(item.x_price[c])
+    for i in range(0,len(a)):
+        print(a[i],"\tharga: ",b[i], "\t jumlah barang: ", total.count(a[i]),
+        "\t jumlah harga: ",b[i]*total.count(a[i]))
 
 def printtotal():
     print({item:total.count(item) for item in total})
