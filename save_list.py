@@ -2,14 +2,14 @@ import numpy as np
 total=[]
 total_price=[]
 
-class item:
-    x=["keju","daging","saus","babi","tempe","tahu","pecel","ayam","cilok","cireng","telur","kentang"]
-    x_price=[2, 6, 8, 7, 9, 8, 5, 4, 3, 6, 1, 2]
-
-
 # class item:
-#     x=[]
-#     x_price=[]
+#     x=["keju","daging","saus","babi","tempe","tahu","pecel","ayam","cilok","cireng","telur","kentang"]
+#     x_price=[2, 6, 8, 7, 9, 8, 5, 4, 3, 6, 1, 2]
+
+
+class item:
+    x=[]
+    x_price=[]
 def inputData():
     x=list((input("\nmasukkan nama dan harga contoh(ayam 2 sapi 5) \t:").strip().split()))
     for i in range(0, len(x),2):
@@ -18,7 +18,7 @@ def inputData():
 
 
 def save(x,y):    
-    f=open("tugasBesar/save.txt","w")
+    f=open("save.txt","w")
     t=zip((x),(y))
     
     with f as my_file:
@@ -45,7 +45,7 @@ def read():
 
 
 
-save(item.x,item.x_price)
+# save(item.x,item.x_price)
 
 end="n"
 while(end=="n"):
