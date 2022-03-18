@@ -1,0 +1,14 @@
+keju,2
+daging,6
+saus,8
+babi,7
+tempe,9
+tahu,8
+pecel,5
+ayam,4
+cilok,3
+cireng,6
+telur,1
+kentang,2
+ikan,2
+tapir,9
