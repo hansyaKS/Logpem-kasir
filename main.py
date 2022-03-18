@@ -1,5 +1,5 @@
 import datetime
-
+import numpy as np
 
 # salutation
 print("ini adalah program kasir\nsilahkan dipilih")
@@ -11,9 +11,12 @@ hargaTotal= []
 
 #list of item with atribute name and price
 class item:
-    x=["keju","daging","saus","babi","tempe","tahu","pecel","ayam", "cilok","cireng","telur","kentang"]
-    x_price=[2, 6, 8, 7, 9, 8, 5, 4, 3, 6, 1, 2]
+    # x=["keju","daging","saus","babi","tempe","tahu","pecel","ayam", "cilok","cireng","telur","kentang"]
+    # x_price=[2, 6, 8, 7, 9, 8, 5, 4, 3, 6, 1, 2]
+    f= np.loadtxt("save.txt", dtype=str,delimiter=",")
 
+    x=f[:,0]
+    x_price=f[:,0]
 
 #function
 
